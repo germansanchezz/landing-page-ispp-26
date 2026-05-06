@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ISPP 2026 — Presentaciones de Proyectos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ─── NAVBAR ─────────────────────────────────────────────────────────── -->
+  <header class="navbar" id="top">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">
+        <span class="brand-icon">⬛</span>
+        <span class="brand-text">ETSII <span class="brand-sub">ISPP&nbsp;26</span></span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="nav-links" id="nav-links">
+        <a href="#schedule">Horario</a>
+        <div class="nav-group">
+          <button class="nav-group-btn">Grupos mañana ▾</button>
+          <div class="nav-dropdown">
+            <a href="#rooma">RoomA</a>
+            <a href="#cerebrus">Cerebrus</a>
+            <a href="#donde-siempre">Donde Siempre</a>
+            <a href="#aura">Aura</a>
+            <a href="#vecinus">VecinUs</a>
+          </div>
+        </div>
+        <div class="nav-group">
+          <button class="nav-group-btn">Grupos tarde ▾</button>
+          <div class="nav-dropdown">
+            <a href="#keakit">KeaKit</a>
+            <a href="#nexus">NexUs</a>
+            <a href="#bookmerang">Bookmerang</a>
+            <a href="#meerkatters">Meerkatters</a>
+            <a href="#streetask">StreetAsk</a>
+            <a href="#current">Current</a>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ─── HERO ──────────────────────────────────────────────────────────── -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <p class="hero-tag">Universidad de Sevilla · ETSII</p>
+        <h1>Presentaciones de<br />Proyectos <span class="accent">2026</span></h1>
+        <p class="hero-desc">
+          Muestra de soluciones software innovadoras desarrolladas por el alumnado
+          de Ingeniería del Software. Únete y sé testigo de la próxima generación
+          de talento tecnológico.
+        </p>
+        <div class="hero-cta">
+          <a href="#schedule" class="btn btn-primary">Ver Horario</a>
+          <a href="#rooma" class="btn btn-ghost">Conocer Grupos</a>
+        </div>
+      </div>
+      <div class="hero-visual" aria-hidden="true">
+        <div class="hero-badge">
+          <span class="badge-day">Jueves</span>
+          <span class="badge-date">21 Mayo 2026</span>
+          <span class="badge-loc">📍 Sala de Actos, ETSII</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ─── SCHEDULE ──────────────────────────────────────────────────────── -->
+  <section class="section" id="schedule">
+    <div class="container">
+      <h2 class="section-title">Horario del Evento</h2>
+      <p class="section-sub">Sigue las presentaciones a lo largo del día.</p>
+
+      <div class="timeline">
+
+        <!-- MORNING BLOCK -->
+        <div class="tl-block">
+          <div class="tl-block-label morning">Sesión de Mañana</div>
+
+          <div class="tl-item" id="rooma">
+            <div class="tl-time">
+              <span class="tl-hour">12:30</span>
+              <span class="tl-label">PRESENTACIÓN</span>
+            </div>
+            <div class="tl-dot accent-dot"></div>
+            <div class="group-card">
+              <div class="card-top">
+                <div class="card-tag morning-tag">Grupo 1</div>
+                <span class="card-emoji">🏫</span>
+              </div>
+              <h3 class="card-name">RoomA</h3>
+              <p class="card-desc">Plataforma de gestión de salas y reservas de espacios universitarios en tiempo real con integración de calendario y notificaciones automáticas.</p>
+            </div>
+          </div>
+
+          <div class="tl-item" id="cerebrus">
+            <div class="tl-time">
+              <span class="tl-hour">12:45</span>
+              <span class="tl-label">PRESENTACIÓN</span>
+            </div>
+            <div class="tl-dot accent-dot"></div>
+            <div class="group-card">
+              <div class="card-top">
+                <div class="card-tag morning-tag">Grupo 2</div>
+                <span class="card-emoji">🧠</span>
+              </div>
+              <h3 class="card-name">Cerebrus</h3>
+              <p class="card-desc">Sistema inteligente de análisis y visualización de datos académicos, con predicciones de rendimiento estudiantil basadas en machine learning.</p>
+            </div>
+          </div>
+
+          <div class="tl-item" id="donde-siempre">
+            <div class="tl-time">
+              <span class="tl-hour">13:00</span>
+              <span class="tl-label">PRESENTACIÓN</span>
+            </div>
+            <div class="tl-dot accent-dot"></div>
+            <div class="group-card">
+              <div class="card-top">
+                <div class="card-tag morning-tag">Grupo 3</div>
+                <span class="card-emoji">📍</span>
+              </div>
+              <h3 class="card-name">Donde Siempre</h3>
+              <p class="card-desc">Aplicación de descubrimiento de locales y planes en la ciudad con recomendaciones personalizadas basadas en historial y preferencias del usuario.</p>
+            </div>
+          </div>
+
+          <div class="tl-item" id="aura">
+            <div class="tl-time">
+              <span class="tl-hour">13:15</span>
+              <span class="tl-label">PRESENTACIÓN</span>
+            </div>
+            <div class="tl-dot accent-dot"></div>
+            <div class="group-card">
+              <div class="card-top">
+                <div class="card-tag morning-tag">Grupo 4</div>
+                <span class="card-emoji">✨</span>
+              </div>
+              <h3 class="card-name">Aura</h3>
+              <p class="card-desc">Herramienta de bienestar digital que monitoriza hábitos de uso del smartphone y ofrece informes de salud mental y productividad personalizados.</p>
+            </div>
+          </div>
+
+          <div class="tl-item" id="vecinus">
+            <div class="tl-time">
+              <span class="tl-hour">13:30</span>
+              <span class="tl-label">PRESENTACIÓN</span>
+            </div>
+            <div class="tl-dot accent-dot"></div>
+            <div class="group-card">
+              <div class="card-top">
+                <div class="card-tag morning-tag">Grupo 5</div>
+                <span class="card-emoji">🏘️</span>
+              </div>
+              <h3 class="card-name">VecinUs</h3>
+              <p class="card-desc">Red social hiperlocal para comunidades de vecinos que facilita la comunicación, organización de eventos y gestión de incidencias del edificio.</p>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-time">
+              <span class="tl-hour">14:00</span>
+              <span class="tl-label">CIERRE MAÑANA</span>
+            </div>
+            <div class="tl-dot"></div>
+            <div class="tl-card neutral-card">
+              <p>Cumplimentación de formularios de evaluación. Cierre de la sesión de mañana y resolución de dudas.</p>
+            </div>
+          </div>
+
+        </div><!-- /morning block -->
+
+        <!-- BREAK -->
+        <div class="tl-item break-item">
+          <div class="tl-time">
+            <span class="tl-hour">14:30</span>
+            <span class="tl-label">DESCANSO</span>
+          </div>
+          <div class="tl-dot break-dot"></div>
+          <div class="tl-card break-card">
+            <span class="break-icon">☕</span>
+            <div>
+              <strong>Pausa para comer</strong>
+              <p>Descanso de 14:30 a 15:30. Reincorporación puntual para la sesión de tarde.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- AFTERNOON BLOCK -->
+        <div class="tl-block">
+          <div class="tl-block-label afternoon">Sesión de Tarde</div>
+
+          <div class="tl-item" id="keakit">
+            <div class="tl-time">
+              <span class="tl-hour">15:30</span>
+              <span class="tl-label">PRESENTACIÓN</span>
+            </div>
+            <div class="tl-dot afternoon-dot"></div>
+            <div class="group-card">
+              <div class="card-top">
+                <div class="card-tag afternoon-tag">Grupo 6</div>
+                <span class="card-emoji">🎨</span>
+              </div>
+              <h3 class="card-name">KeaKit</h3>
+              <p class="card-desc">Kit de componentes UI accesibles y temáticos para aplicaciones web modernas, con soporte para modo oscuro y personalización avanzada.</p>
+            </div>
+          </div>
+
+          <div class="tl-item" id="nexus">
+            <div class="tl-time">
+              <span class="tl-hour">15:45</span>
+              <span class="tl-label">PRESENTACIÓN</span>
+            </div>
+            <div class="tl-dot afternoon-dot"></div>
+            <div class="group-card">
+              <div class="card-top">
+                <div class="card-tag afternoon-tag">Grupo 7</div>
+                <span class="card-emoji">🔗</span>
+              </div>
+              <h3 class="card-name">NexUs</h3>
+              <p class="card-desc">Plataforma colaborativa para universitarios que conecta estudiantes con proyectos de investigación y oportunidades de prácticas en empresas tecnológicas.</p>
+            </div>
+          </div>
+
+          <div class="tl-item" id="bookmerang">
+            <div class="tl-time">
+              <span class="tl-hour">16:00</span>
+              <span class="tl-label">PRESENTACIÓN</span>
+            </div>
+            <div class="tl-dot afternoon-dot"></div>
+            <div class="group-card">
+              <div class="card-top">
+                <div class="card-tag afternoon-tag">Grupo 8</div>
+                <span class="card-emoji">📚</span>
+              </div>
+              <h3 class="card-name">Bookmerang</h3>
+              <p class="card-desc">Marketplace de intercambio y venta de libros de segunda mano entre estudiantes universitarios, con sistema de valoraciones y búsqueda por ISBN.</p>
+            </div>
+          </div>
+
+          <div class="tl-item" id="meerkatters">
+            <div class="tl-time">
+              <span class="tl-hour">16:15</span>
+              <span class="tl-label">PRESENTACIÓN</span>
+            </div>
+            <div class="tl-dot afternoon-dot"></div>
+            <div class="group-card">
+              <div class="card-top">
+                <div class="card-tag afternoon-tag">Grupo 9</div>
+                <span class="card-emoji">📡</span>
+              </div>
+              <h3 class="card-name">Meerkatters</h3>
+              <p class="card-desc">Sistema de alertas y monitorización de infraestructura en tiempo real con dashboards configurables y notificaciones multicanal para equipos DevOps.</p>
+            </div>
+          </div>
+
+          <div class="tl-item" id="streetask">
+            <div class="tl-time">
+              <span class="tl-hour">16:30</span>
+              <span class="tl-label">PRESENTACIÓN</span>
+            </div>
+            <div class="tl-dot afternoon-dot"></div>
+            <div class="group-card">
+              <div class="card-top">
+                <div class="card-tag afternoon-tag">Grupo 10</div>
+                <span class="card-emoji">🗺️</span>
+              </div>
+              <h3 class="card-name">StreetAsk</h3>
+              <p class="card-desc">Aplicación de encuestas geolocalizadas para recabar opinión ciudadana sobre servicios públicos, urbanismo e iniciativas municipales de forma anónima.</p>
+            </div>
+          </div>
+
+          <div class="tl-item" id="current">
+            <div class="tl-time">
+              <span class="tl-hour">16:45</span>
+              <span class="tl-label">PRESENTACIÓN</span>
+            </div>
+            <div class="tl-dot afternoon-dot"></div>
+            <div class="group-card">
+              <div class="card-top">
+                <div class="card-tag afternoon-tag">Grupo 11</div>
+                <span class="card-emoji">⚡</span>
+              </div>
+              <h3 class="card-name">Current</h3>
+              <p class="card-desc">Panel de control para la gestión del consumo eléctrico del hogar con integración de dispositivos inteligentes, análisis de patrones y recomendaciones de ahorro.</p>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-time">
+              <span class="tl-hour">17:00</span>
+              <span class="tl-label">CIERRE TARDE</span>
+            </div>
+            <div class="tl-dot"></div>
+            <div class="tl-card neutral-card">
+              <p>Cumplimentación de formularios de evaluación final. Cierre del evento y entrega de reconocimientos.</p>
+            </div>
+          </div>
+
+          <div class="tl-item">
+            <div class="tl-time">
+              <span class="tl-hour">17:30</span>
+              <span class="tl-label">FIN</span>
+            </div>
+            <div class="tl-dot end-dot"></div>
+            <div class="tl-spacer"></div>
+          </div>
+
+        </div><!-- /afternoon block -->
+
+      </div><!-- /timeline -->
+    </div>
+  </section>
+
+  <!-- ─── FOOTER ────────────────────────────────────────────────────────── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="brand-icon">⬛</span>
+        <span class="brand-text">ETSII</span>
+      </div>
+      <p class="footer-copy">© 2026 Universidad de Sevilla · Ingeniería del Software</p>
+      <nav class="footer-links">
+        <a href="https://www.us.es" target="_blank" rel="noopener">Universidad de Sevilla</a>
+        <a href="https://www.informatica.us.es" target="_blank" rel="noopener">ETSII</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
