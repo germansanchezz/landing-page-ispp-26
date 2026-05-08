@@ -448,6 +448,13 @@ body {
   justify-content: space-between;
 }
 .footer .brand-text { color: var(--white); font-size: 1rem; }
+.footer .brand-icon {
+  height: 36px;
+  width: auto;
+  background: var(--white);
+  border-radius: 8px;
+  padding: 4px 10px;
+}
 .footer-copy { font-size: .85rem; }
 .footer-links { display: flex; gap: 1rem; flex-wrap: wrap; }
 .footer-links a {
@@ -457,6 +464,36 @@ body {
   transition: color .15s;
 }
 .footer-links a:hover { color: var(--white); }
+
+/* ── Card logo & landing link ────────────────────────────────────────── */
+.card-logo {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 8px;
+}
+
+.btn-landing {
+  display: inline-flex;
+  align-items: center;
+  gap: .35rem;
+  font-size: .8rem;
+  font-weight: 600;
+  color: var(--red);
+  text-decoration: none;
+  padding: .35rem .7rem;
+  border-radius: 6px;
+  border: 1px solid rgba(192,57,43,.25);
+  background: transparent;
+  transition: background .15s, color .15s;
+  margin-top: .25rem;
+}
+.btn-landing:hover { background: rgba(192,57,43,.07); }
+.btn-landing.afternoon-link {
+  color: var(--afternoon);
+  border-color: rgba(123,63,160,.25);
+}
+.btn-landing.afternoon-link:hover { background: rgba(123,63,160,.07); }
 
 /* ── Responsive ──────────────────────────────────────────────────────── */
 
