@@ -85,7 +85,13 @@ body {
   font-size: 1.1rem;
   flex-shrink: 0;
 }
-.brand-icon { color: var(--red); font-size: 1.2rem; }
+.navbar .brand-icon {
+  display: block;
+  width: auto;
+  max-width: 180px;
+  height: 40px;
+  object-fit: contain;
+}
 .brand-sub  { color: var(--red); }
 
 .nav-links {
