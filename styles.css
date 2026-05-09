@@ -264,6 +264,7 @@ body {
 
 /* ── Timeline ────────────────────────────────────────────────────────── */
 .timeline {
+  --timeline-line-x: 140px;
   position: relative;
   max-width: 900px;
   margin: 0 auto;
@@ -273,7 +274,7 @@ body {
 .timeline::before {
   content: '';
   position: absolute;
-  left: 140px;
+  left: var(--timeline-line-x);
   top: 0;
   bottom: 0;
   width: 2px;
@@ -299,6 +300,7 @@ body {
 
 /* individual time row */
 .tl-item {
+  position: relative;
   display: grid;
   grid-template-columns: 140px 20px 1fr;
   gap: 0 1rem;
@@ -307,6 +309,7 @@ body {
 }
 
 .tl-time {
+  grid-column: 1;
   text-align: right;
   padding-top: .1rem;
 }
@@ -328,14 +331,21 @@ body {
 
 /* dots */
 .tl-dot {
+  position: absolute;
+  left: var(--timeline-line-x);
+  top: 50%;
+  transform: translate(-50%, -50%);
   width: 14px;
   height: 14px;
   border-radius: 50%;
   background: var(--grey-200);
   border: 3px solid var(--white);
   box-shadow: 0 0 0 2px var(--grey-200);
-  margin-top: .3rem;
-  justify-self: center;
+  z-index: 1;
+}
+
+.project-item .tl-dot {
+  top: 4.45rem;
 }
 .accent-dot   { background: var(--red);       box-shadow: 0 0 0 2px rgba(192,57,43,.25); }
 .afternoon-dot{ background: var(--afternoon); box-shadow: 0 0 0 2px rgba(123,63,160,.25); }
@@ -343,6 +353,13 @@ body {
 .end-dot      { background: var(--grey-400); }
 
 .tl-spacer { /* empty right cell */ }
+
+.group-card,
+.tl-card,
+.tl-spacer {
+  grid-column: 3;
+  min-width: 0;
+}
 
 /* individual group card */
 .group-card {
@@ -551,7 +568,7 @@ body {
   .nav-group.open .nav-dropdown { display: flex; }
 
   /* timeline */
-  .timeline::before { left: 0; }
+  .timeline { --timeline-line-x: 0; }
 
   .tl-block-label { margin-left: 1.5rem; }
 
